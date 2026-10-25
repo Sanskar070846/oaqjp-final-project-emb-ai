@@ -1,51 +1,33 @@
-# Final Project: AI-Based Emotion Detection
+cat > README.md <<'EOF'
+# Final project
 
-## Project Overview
-This project develops an AI-based emotion detection application that analyzes customer feedback and identifies emotions expressed in text using the Watson NLP library.
+## Emotion Detection Application
 
-## Objectives
-- Detect emotions in text.
-- Identify anger, disgust, fear, joy, and sadness.
-- Format the detected emotions into a structured response.
-- Package the application as a reusable Python module.
-- Perform unit testing.
-- Deploy the application using Flask.
-- Implement error handling and static code analysis.
+This project detects the five main emotions in text using the Skills Network
+Watson NLP EmotionPredict service.
 
-## Technologies Used
-- Python 3
-- Watson NLP
+### Features
+- Detects anger, disgust, fear, joy, and sadness.
+- Identifies the dominant emotion.
+- Provides a Flask web interface.
+- Handles empty or invalid input.
+- Includes automated unit tests.
+
+### Technology
+- Python
 - Flask
 - Requests
-- Unittest
-- PyLint
+- Watson NLP EmotionPredict API
+- unittest
 
-## Project Structure
-- `emotion_detection.py` — Emotion detection logic.
-- `__init__.py` — Python package initialization.
-- `test_emotion_detection.py` — Unit tests.
-- `server.py` — Flask web application.
-- `static/` — Static web resources.
-- `templates/` — HTML templates.
-
-## Execution
-Install the required dependencies:
-
-```bash
-python3 -m pip install requests flask
-```
-
-Run the unit tests:
-
-```bash
-python3 test_emotion_detection.py
-```
-
-Start the Flask application:
-
-```bash
+### Run the application
 python3 server.py
-```
 
-## Learning Outcomes
-This project demonstrates Python application development, API integration, modular packaging, unit testing, web deployment, error handling, and static code analysis.
+Launch port 5000 using the Skills Network Cloud IDE.
+
+### Run unit tests
+python3 -m unittest -v test_emotion_detection.py
+
+### Package
+EmotionDetection
+EOF
